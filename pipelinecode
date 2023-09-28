@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('one') {
+            steps {
+               git 'https://github.com/moulabi1911/project-1.git' 
+            }
+        }
+        stage('artifact') {
+            steps {
+               sh 'mvn clean package'
+            }
+        }
+    }
+    post {
+        always {
+            echo 'my artifact file is generated'
+        }
+    }
+}
