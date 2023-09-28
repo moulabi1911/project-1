@@ -15,7 +15,7 @@ pipeline {
     }
     post {
         always {
-            echo 'my artifact file is generated'
+            echo 'my artifact file is generated successfully'
         }
     }
 }
