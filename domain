@@ -1,6 +1,0 @@
-
-Step-1: Login into AWS console.
-
-Step-2: Go to Route53 --> Click on Registered domains -->  Register domain --> Search for domain --> Select available domain --> Proceed to checkout -->  Click on Next --> Give contact information --> Click on submit.
-
-Step-3: Go to requests, there we will get status. When status is success we get mail for the payment. AWS will charge you for the domain registration fees. Once the payment is processed successfully, you will receive a confirmation email from AWS Route 53 with details about your registered domain.
