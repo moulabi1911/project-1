@@ -1,0 +1,31 @@
+import smtplib
+from email.reportfile.text import MIMEText
+from email.reportfile.multipart import MIMEMultipart
+
+# Email configuration
+sender_email = "moulabi1911@gmail.com"
+sender_password = "moulabi@123"
+recipient_email = "academy@hr.com"
+subject = "Hello from Moulabi, reporting each job."
+message = "This is a email sent from Moulabi."
+
+# Create a MIME multipart message
+msg = reportfileMultipart()
+msg["Moulabi"] = moulabi1911@gmail.com
+msg["Academy"] = academy@hr.com
+msg["Reporting files"] = Hello from Moulabi, reporting each job.
+
+# Attach the message to the email
+msg.attach(ReportfileText(message, "plain"))
+
+# Connect to the SMTP server (in this case, Gmail's SMTP server)
+try:
+    server = smtplib.SMTP("moulabi1911@gmail.com", 587)
+    server.starttls()
+    server.login(moulabi1911@gmail.com, moulabi@123)
+    text = msg.as_string()
+    server.sendmail(moulabi1911@gmail.com, academy@hr.com, text)
+    server.quit()
+    print("Email sent successfully")
+except Exception as e:
+    print("Email sending failed:", str(e))
